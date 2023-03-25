@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Fraunces', serif;;
+}
+
+
+/* VARIABLES */
+:root{
+    --Softred: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --graphicdesigntext: hsl(167, 40%, 24%);
+    --photographytext: hsl(198, 62%, 26%);
+    --footer: hsl(168, 34%, 41%);
+    --Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+    --Verydarkgrayishblue: hsl(213, 9%, 39%);
+    --Darkgrayishblue: hsl(232, 10%, 55%);
+    --Grayishblue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+
+header .navigation{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+header .navigation-items{
+    position: relative;
+}
+
+header .navigation-items a{
+    color: var(--White);
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: 'Barlow', sans-serif;
+}
+header .navigation-items button{
+    background-color: var(--White);
+    margin-left: 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    height: 45px;
+    width: 130px;
+    border: 0;
+}
+
+header .navigation-items button:hover{
+    background-color: var(--Verydarkgrayishblue);
+    color: var(--White);
+}
+
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../images/desktop/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.home h1{
+    color: var(--White);
+    font-weight: 900;
+    font-size: 72px;
+    letter-spacing: 10px;
+}
+.home img{
+    width: 25px;
+}
+.portfolio{
+    display: flex;
+}
+
+.portfolio .left1{
+    background-color: var(--White);
+    height: 70vh;
+    width: 50%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+.portfolio .left1 h1{
+    width: 50%;
+    margin: auto;
+    
+    font-size: 50px;
+}
+
+.portfolio .left1 p{
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--Verydarkgrayishblue);
+    font-family: 'Barlow', sans-serif;
+}
+
+.portfolio .left1 a{
+    display: flex;
+    width: 50%;
+    margin-top: 30px;
+    margin: auto;
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: var(--Yellow);
+}
+
+.portfolio .right1{
+    background: url('../images/desktop/image-transform.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 70vh;
+}
+
+.portfolio2 .left2{
+    background: url('../images/desktop/image-stand-out.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 70vh;
+}
