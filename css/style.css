@@ -82,9 +82,10 @@ header .navigation-items button:hover{
     font-weight: 900;
     font-size: 72px;
     letter-spacing: 10px;
+    text-align: center;
 }
 .home img{
-    width: 25px;
+    width: 35px;
 }
 .portfolio{
     display: flex;
@@ -114,16 +115,22 @@ header .navigation-items button:hover{
     font-family: 'Barlow', sans-serif;
 }
 
-.portfolio .left1 a{
+.portfolio .left1 .learn{
     display: flex;
     width: 50%;
     margin-top: 30px;
     margin: auto;
-    color: black;
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
-    text-decoration-color: var(--Yellow);
 }
+.portfolio .left1 .learn a{
+    color: black;
+    text-decoration: none;
+    box-shadow: inset 0 -10px rgb(255, 255, 136); 
+}
+
+.portfolio .left1 .learn a:hover{
+    box-shadow: inset 0 -10px var(--Yellow); 
+}
+
 
 .portfolio .right1{
     background: url('../images/desktop/image-transform.jpg');
@@ -134,6 +141,10 @@ header .navigation-items button:hover{
     height: 70vh;
 }
 
+.portfolio2{
+    display: flex;
+}
+
 .portfolio2 .left2{
     background: url('../images/desktop/image-stand-out.jpg');
     background-repeat: no-repeat;
@@ -141,4 +152,180 @@ header .navigation-items button:hover{
     background-position: center;
     width: 50%;
     height: 70vh;
+}
+
+.portfolio2 .right2{
+    background-color: var(--White);
+    height: 70vh;
+    width: 50%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+.portfolio2 .right2 h1{
+    width: 60%;
+    margin: auto;
+    font-size: 50px;
+}
+
+.portfolio2 .right2 p{
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--Verydarkgrayishblue);
+    font-family: 'Barlow', sans-serif;
+}
+
+.portfolio2 .right2 .learn{
+    display: flex;
+    width: 60%;
+    margin-top: 30px;
+    margin: auto;
+}
+.portfolio2 .right2 .learn a{
+    color: black;
+    text-decoration: none;
+    box-shadow: inset 0 -10px hsl(7, 84%, 75%); 
+}
+
+.portfolio2 .right2 .learn a:hover{
+    box-shadow: inset 0 -10px var(--Softred); 
+}
+
+.portfolio3{
+    display: flex;
+}
+
+.portfolio3 .left3{
+    background: url('../images/desktop/image-graphic-design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 70vh;
+    display: grid;
+    align-items: center;
+    align-content: end;
+}
+
+
+.portfolio3 .left3 h1{
+    width: 50%;
+    margin: auto;
+    color: var(--graphicdesigntext);
+    font-size: 40px;
+    text-align: center;
+}
+
+.portfolio3 .left3 p{
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--graphicdesigntext);
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+}
+
+.portfolio3 .right3{
+    background: url('../images/desktop/image-photography.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 70vh;
+    display: grid;
+    align-items: center;
+    align-content: end;
+}
+
+
+.portfolio3 .right3 h1{
+    margin: auto;
+    color: var(--photographytext);
+    font-size: 40px;
+    text-align: center;
+}
+
+.portfolio3 .right3 p{
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--photographytext);
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+}
+
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.testimonials-section > span{
+    color: var(--Dark-grayish-blue);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 5px;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 3.5rem;
+}
+
+
+.testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-inline: 1.5rem;
+    background-color: var(--White);
+    opacity: 0;
+}
+
+.testimony > .avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+}
+
+.testimony > p {
+    margin-block: 2.5rem;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.testimony > .author {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 900;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.testimony > .position {
+    color: var(--Grayish-blue);
+    font-size: .9375rem;
+}
+
+.testimonials :nth-child(2) {
+    transition-delay: .3s;
+}
+
+.testimonials :nth-child(3) {
+    transition-delay: .6s;
 }
